@@ -1,0 +1,133 @@
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-nav__photo {
+  display: block;
+  margin-left: 10px;
+  margin-right: 65px;
+
+  &:active {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+}
+
+.page-nav__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: $small-width;
+  height: 50px;
+}
+
+.page-nav__title {
+  font-size: 18px;
+  font-weight: normal;
+  color: rgba(39, 83, 167, 1);
+}
+
+.page-nav__toggle {
+  border: none;
+  background-color: transparent;
+
+  &--open,
+  &--close {
+    transition: 0.3s;
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      transition: 0.3s;
+      opacity: 0.7;
+    }
+  }
+
+  &--open {
+    right: 14px;
+    top: 14px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/CloseMenuButton.svg");
+  }
+
+  &--close {
+    right: 14px;
+    top: 17px;
+    width: 24px;
+    height: 16px;
+    background-image: url("../img/OpenMenuButton.svg");
+  }
+}
+
+
+.page-nav__list {
+  @include clear-list;
+  display: none;
+  flex-direction: column;
+  width: $small-width;
+}
+
+.page-nav__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 45px;
+  background-color: rgba(39, 83, 167, 1);
+
+  &:hover,
+  &:focus {
+    transition: 0.5s;
+    background-color: rgba(25, 43, 89, 1);
+  }
+
+  &:active .page-nav__link,
+  &:active::before {
+    transition: 0.1s;
+    opacity: 0.7;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+  }
+
+  &--photo-printing::before {
+     background-image: url("../../img/baseline-print-24px.svg");
+   }
+
+  &--photo-and-video::before {
+     background-image: url("../../img/baseline-linked_camera-24px.svg");
+   }
+
+  &--photo-processing::before {
+     background-image: url("../../img/baseline-edit-24px.svg");
+   }
+
+  &--creating-photo-albums::before {
+     background-image: url("../../img/baseline-style-24px.svg");
+   }
+
+  &--tours-and-hikes::before {
+     background-image: url("../../img/baseline-terrain-24px.svg");
+   }
+
+  &--photo-gallery::before {
+     background-image: url("../../img/baseline-collections-24px.svg");
+   }
+}
+
+.page-nav__link {
+  color: rgb(255, 255, 255);
+}

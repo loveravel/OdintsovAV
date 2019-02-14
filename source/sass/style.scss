@@ -1,2 +1,11 @@
 /* ------ Libraries ------ */
 @import "libraries/normalize.scss";
+
+/* ------ Standards ------ */
+@import "standards/scaffolding.scss";
+@import "standards/mixins.scss";
+@import "standards/variables.scss";
+
+/* ------ Blocks ------ */
+@import "blocks/page-header.scss";
+@import "blocks/page-nav.scss";
