@@ -70,16 +70,20 @@
 
 @media (min-width: $large-width) {
   .navigation {
-    justify-content: center;
-    flex-direction: row;
+    top: 0;
   }
 
   .navigation__list {
+    position: relative;
+    top: -15px;
     @include clear-list;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1200px;
+    min-height: auto;
+    min-width: auto;
+    margin-right: 82px;
+    background-color: transparent;
   }
 
   .navigation__toggle {
@@ -87,7 +91,17 @@
   }
 
   .navigation__item {
-    padding-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+
+  .navigation__link {
+    font-size: 16px;
+    transition: 0.4s;
+
+    &:hover,
+    &:focus {
+      color: #26d07c;
+      transition: 0.4s;
+    }
   }
 }

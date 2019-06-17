@@ -4,6 +4,41 @@
   margin-bottom: 30px;
 }
 
+.reviews__title {
+  @include title-h2-mobile;
+}
+
 .reviews__list {
   @include clear-list;
+}
+
+.reviews__author {
+  @include title-h3-mobile;
+}
+
+.reviews__text {
+  @include text-mobile;
+}
+
+@media (min-width: $large-width) {
+  .reviews {
+    @include section-desktop;
+    background-color: #ffffff;
+  }
+
+  .reviews__item {
+    margin-bottom: 30px;
+  }
+
+  .reviews__title {
+    @include title-h2-desktop;
+  }
+
+  .reviews__author {
+    @include title-h3-desktop;
+  }
+
+  .reviews__text {
+    @include text-mobile;
+  }
 }

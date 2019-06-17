@@ -8,7 +8,8 @@
 }
 
 @media (min-width: $large-width) {
-  .page-footer__wrapper {
-    width: 1090px;
+  .page-footer {
+    width: $large-width - 120px;
+    padding: 15px 60px;
   }
 }

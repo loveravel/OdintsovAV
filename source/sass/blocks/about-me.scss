@@ -1,3 +1,30 @@
 .about-me {
   @include section-mobile;
 }
+
+.about-me__title {
+  @include title-h2-mobile;
+}
+
+.about-me__bio,
+.about-me__pro {
+  @include text-mobile;
+}
+
+@media (min-width: $large-width) {
+  .about-me {
+    @include section-desktop;
+    background-color: #f5f5f1;
+  }
+
+  .about-me__title {
+    @include title-h2-desktop;
+  }
+
+  .about-me__bio,
+  .about-me__pro {
+    @include text-desktop;
+  }
+}
+
+

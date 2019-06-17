@@ -3,34 +3,38 @@
   flex-direction: column;
   width: 360px;
   margin: 0 auto;
-  background-color: #F5F5F1;
+  background-color: #f5f5f1;
 }
 
 .page-header__logo  {
   position: relative;
   z-index: 20;
+}
+
+.page-header__link {
+  display: block;
   text-transform: uppercase;
   letter-spacing: 4px;
   max-width: 140px;
   padding: 20px;
-  background-color: #26D07C;
+  background-color: #26d07c;
+  cursor: pointer;
+  color: #f5f5f1;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    transition: 0.5s;
+    background-color: #f5f5f1;
+    color: #26d07c;
+  }
 }
 
-.page-header__link {
-  color: #F5F5F1;
-}
-
-/*
 @media (min-width: $large-width) {
   .page-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .page-header__title {
-    text-align: center;
-    width: 1200px;
+    justify-content: space-between;
+    flex-direction: row;
+    width: $large-width;
+    margin-bottom: 40px;
   }
 }
-*/
