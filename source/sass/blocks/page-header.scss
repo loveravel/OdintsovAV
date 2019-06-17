@@ -6,6 +6,12 @@
   background-color: #f5f5f1;
 }
 
+.page-header--contacts {
+  position: relative;
+  z-index: 10;
+  background-color: #465062;
+}
+
 .page-header__logo  {
   position: relative;
   z-index: 20;
@@ -36,5 +42,11 @@
     flex-direction: row;
     width: $large-width;
     margin-bottom: 40px;
+  }
+
+  .page-header--contacts {
+    position: relative;
+    z-index: 10;
+    background-color: #f5f5f1;
   }
 }
