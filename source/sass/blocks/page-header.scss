@@ -1,5 +1,36 @@
 .page-header {
-  width: $small-width;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
   margin: 0 auto;
-  background-color: rgba(234, 234, 234, 1);
+  background-color: #F5F5F1;
 }
+
+.page-header__logo  {
+  position: relative;
+  z-index: 20;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  max-width: 140px;
+  padding: 20px;
+  background-color: #26D07C;
+}
+
+.page-header__link {
+  color: #F5F5F1;
+}
+
+/*
+@media (min-width: $large-width) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-header__title {
+    text-align: center;
+    width: 1200px;
+  }
+}
+*/

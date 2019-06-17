@@ -3,3 +3,9 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin section-mobile {
+  width: $small-width - 30px;
+  padding: 10px 15px 20px;
+  margin: 0 auto;
+}

@@ -1,0 +1,14 @@
+.page-footer {
+  @include section-mobile;
+  display: flex;
+  justify-content: space-between;
+  width: $small-width;
+  background-color: #222222;
+  color: #f5f5f1;
+}
+
+@media (min-width: $large-width) {
+  .page-footer__wrapper {
+    width: 1090px;
+  }
+}

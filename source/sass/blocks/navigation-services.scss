@@ -1,0 +1,15 @@
+.navigation-services__list {
+  @include clear-list;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navigation-services__item {
+  margin-top: 15px;
+}
+
+.navigation-services__link {
+  font-size: 16px;
+  color: #465062;
+}

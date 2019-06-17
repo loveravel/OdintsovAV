@@ -1,9 +1,11 @@
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
+  font-size: 14px;
+  color: #333333;
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 h1,
@@ -20,6 +22,16 @@ a {
 img {
   max-width: 100%;
   /*height: auto;*/
+}
+
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -42,4 +54,47 @@ input[type="radio"].visually-hidden {
 
 .sprite-inline {
   display: none;
+}
+
+.title-h2 {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #26d07c;
+  color: #465062;
+}
+
+.title-h3 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #26d07c;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  color: #ffffff;
+  background-color: #26d07c;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    transition: 0.5s;
+    background-color: #1eb86c;
+  }
+
+  &:active {
+    transition: 0.1s;
+    opacity: 0.7;
+  }
+}
+
+.text {
+  margin-bottom: 12px;
+  color: #465062;
 }
