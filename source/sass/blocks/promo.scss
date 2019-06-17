@@ -31,6 +31,29 @@
   line-height: 20px;
 }
 
+.promo__list {
+  @include clear-list;
+}
+
+.promo__item {
+  padding: 5px 0;
+}
+
+.promo__link {
+  color: #f5f5f1;
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    transition: 0.4s;
+    color: #26D07C;
+  }
+
+  &--active {
+    border-bottom: 2px solid #26D07C;
+  }
+}
+
 @media (min-width: $large-width) {
   .promo {
     justify-content: space-between;
@@ -72,5 +95,9 @@
     font-size: 22px;
     border: none;
     color: #222222;
+  }
+
+  .promo__link {
+    color: #465062;
   }
 }
