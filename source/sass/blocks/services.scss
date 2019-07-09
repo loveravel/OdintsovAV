@@ -44,6 +44,22 @@
   }
 }
 
+.services__table {
+  width: $small-width - 50px;
+  padding: 10px;
+  border-collapse: separate;
+  border-spacing: 20px 5px;
+  margin: 0 auto 32px;
+  border: 1px solid #465062;
+}
+
+.services__table td,
+.services__table th {
+  text-align: center;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #26d07c;
+}
+
 @media (min-width: $large-width) {
   .services__list {
     max-width: 1200px;
@@ -57,8 +73,22 @@
   .services__description {
     @include text-desktop;
     padding: 30px;
+    margin: 0;
     width: 500px;
   }
 
+  .services__table {
+    width: $large-width - 300px;
+    padding: 0;
+    border-spacing: 20px 10px;
+    border: none;
+    margin: 0 0 30px;
+  }
 
+  .services__table td,
+  .services__table th {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 }

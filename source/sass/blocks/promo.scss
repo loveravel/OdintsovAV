@@ -76,7 +76,7 @@
     width: $large-width - 260px;
     margin-bottom: 60px;
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       z-index: -1;
@@ -85,6 +85,12 @@
       width: 320px;
       height: 440px;
       border: 10px solid #dbe2e9;
+      transition: 0.7s;
+    }
+
+    &:hover::after {
+      transition: 0.7s;
+      border: 10px solid #26D07C;
     }
   }
 
